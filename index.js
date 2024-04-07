@@ -1,18 +1,27 @@
 let degree = 0;
+let counter = 1;
+
+animation(counter);
 
 $('.next-btn').on('click', function(){
+    counter -= 1;
+    if(counter < 1) counter = 4;
     degree += 90;
     document.querySelector('.box').style.transform = `rotateY(${degree}deg)`;
+    animation(counter);
 });
 
 $('.prev-btn').on('click', function(){
+    counter += 1;
+    if(counter > 4) counter = 1;
     degree -= 90;
     document.querySelector('.box').style.transform = `rotateY(${degree}deg)`;
+    animation(counter);
 });
 
-
-function animation(counter, imgId){
-    gsap.to('.box', { rotationX: counter});
-    let current = document.getElementById(`${imgId}`);
-    gsap.to('.img', {opacity:(i,t)=>(t==current)? 1:0.5, ease:'power3'});
+function animation(counter){
+    document.querySelectorAll('.color').forEach(function(color){
+        color.style.opacity = '0.5';
+    });
+    document.getElementById(`${counter}`).style.opacity = '1.0';
 }
