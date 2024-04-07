@@ -7,25 +7,38 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>ShowCasing</title>
 </head>
-<body>
+<body class="bg-slate-50">
 
-        <div class="conteneur">
-            <div class="box">
-                <div class="img" id="back">Back</div>
-                <div class="img" id="bottom">Bottom</div>
-                <div class="img" id="top">Top</div>
-                <div class="img" id="front">Front</div>
-                <div class="img" id="left">left</div>
-                <div class="img" id="right">right</div>
-            </div>
+    <div class="conteneur absolute left-96">
+        <div class="box">
+            <div class="img" id="back">Back</div>
+            <div class="img" id="bottom">Bottom</div>
+            <div class="img" id="top">Top</div>
+            <div class="img" id="front">Front</div>
+            <div class="img" id="left">left</div>
+            <div class="img" id="right">right</div>
         </div>
-
-
-    <div class="w-full flex items-center justify-center pb-24 gap-8">
-        <box-icon name='chevron-left' class="next-btn bg-gray-700 rounded-full cursor-pointer active:bg-gray-900" color="white" size="md"></box-icon>
-        <box-icon name='chevron-right' class="prev-btn bg-gray-700 rounded-full cursor-pointer active:bg-gray-900" color="white" size="md"></box-icon>
     </div>
-    
+
+    <div class="w-96 h-[100vh] flex flex-col items-center justify-center gap-20 absolute right-60">
+        <div class="h-64 w-full  flex flex-col items-start gap-10">
+            <h1 class="text-xl absolute left-12 text-gray-700">iPhone 15 pro</h1>
+            <h2 class="text-4xl absolute left-12 top-16">$999</h2>
+            <div class="mt-36 flex w-full justify-start  bg-orange-300">
+                <div class="h-7 w-7 absolute rounded-full bg-slate-800 left-12"></div>
+                <div class="h-7 w-7 absolute rounded-full bg-red-800 left-24"></div>
+                <div class="h-7 w-7 absolute rounded-full bg-green-800 left-36"></div>
+                <div class="h-7 w-7 absolute rounded-full bg-blue-800 left-48"></div>
+            </div>
+
+        </div>
+        <div class="w-full flex items-center justify-center mt-60 gap-8">
+            <box-icon name='chevron-left' class="next-btn rounded-full cursor-pointer active:bg-gray-200" color="black" size="md"></box-icon>
+            <box-icon name='chevron-right' class="prev-btn rounded-full cursor-pointer active:bg-gray-200" color="black" size="md"></box-icon>
+            <p class="bg-black text-white px-8 py-2 font-semibold rounded-md cursor-pointer">Add to cart</p>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>

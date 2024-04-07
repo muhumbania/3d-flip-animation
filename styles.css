@@ -11,8 +11,7 @@ html, body, .box, .img {
   }
   
   html, body {
-    overflow:hidden;
-    background:#585857;  
+    overflow:hidden; 
   }
   
   div, svg {
@@ -22,11 +21,12 @@ html, body, .box, .img {
   .conteneur {
     position: absolute;
     perspective: 1000px;
-    width: 30vh;
-    height: 60vh;  
+    width: 350px;
+    height: 350px;  
     left:50%;
+    /* background: #000; */
     top:50%;
-    transform:translate(-50%,-50%);
+    transform:translate(-35%,-35%);
   }
 
   .box{
@@ -34,20 +34,17 @@ html, body, .box, .img {
     width: 250px;
     position: absolute;
     /* transform: rotateX(90deg); */
-    transition: transform 3s ease;
+    transition: transform 2s ease;
   }
 
   .img{
     height: 250px;
     width: 250px;
     position: absolute;
-    background-color: black;
     color: beige;
     text-align: center;
     box-sizing: border-box;
     border: 2px solid white;
-    backface-visibility: hidden;
-    transition: transform 1s ease;
   }
 
   #top{
