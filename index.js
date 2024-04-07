@@ -21,7 +21,7 @@ $('.prev-btn').on('click', function(){
 
 function animation(counter){
     document.querySelectorAll('.color').forEach(function(color){
-        color.style.opacity = '0.5';
+        color.style.opacity = '0.2';
     });
     document.getElementById(`${counter}`).style.opacity = '1.0';
 }

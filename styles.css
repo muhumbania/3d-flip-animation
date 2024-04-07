@@ -24,7 +24,6 @@ html, body, .box, .img {
     width: 350px;
     height: 350px;  
     left:50%;
-    /* background: #000; */
     top:50%;
     transform:translate(-35%,-35%);
   }
